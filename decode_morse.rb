@@ -39,8 +39,7 @@ hash = {
   }
 
 def decode_morse(morse)
-  a = ""
-  morse.split.map { |e| hash[e] }.join
+  morse.split.map {|e| a[e].upcase }.join
 end
 
 puts decode_morse('.... . .-.. .-.. --- .-- --- .-. .-.. -..')
